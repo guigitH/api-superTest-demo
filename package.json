@@ -4,7 +4,7 @@
   "description": "Repository to demo api with supertest",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/firstTest.spec.js"
+    "test:mocked": "mocha testsMocked/*.spec.js"
   },
   "repository": {
     "type": "git",
