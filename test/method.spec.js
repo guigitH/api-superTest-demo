@@ -1,6 +1,7 @@
 import { URL } from './constant/constant.js';
 import  request  from 'supertest';
 import { expect }  from 'chai';
+
 // Using promises
 describe('Check method' , () => {
     it('post method is not allowed', () => {

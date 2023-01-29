@@ -2,7 +2,8 @@ import { URL } from './constant/constant.js';
 import  request  from 'supertest';
 import { expect }  from 'chai';
 
-// need to pass done() in the end() function
+// need to pass done() in the end() function -
+// Old-style callbacks are also supported, but not recommended.
 describe('Check request status code ' , () => {
     it('request is successful to www.google.com', (done) => {
         request(URL.GOOGLE)
