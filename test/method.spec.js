@@ -1,10 +1,10 @@
-const request = require('supertest');
-const expect = require('chai').expect;
-
+import { URL } from './constant/constant.js';
+import  request  from 'supertest';
+import { expect }  from 'chai';
 // Using promises
 describe('Check method' , () => {
     it('post method is not allowed', () => {
-        return request("https://www.google.com")
+        return request(URL.GOOGLE)
         .post('/')
         .expect(405)
         .then(response => {
